@@ -1,0 +1,25 @@
+{
+  "name": "M'Wallet Blueprint",
+  "version": "1.0.0",
+  "description": "Your First Crypto Wallet Extension",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Wallet"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webNavigation",
+    "tabs",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "YOUR_AUTH0_CLIENT_ID",
+    "scopes": ["openid", "profile", "email"],
+    "redirect_uri": "YOUR_EXTENSION_REDIRECT_URI"
+  },
+  "externally_connectable": {
+    "matches": ["*://*.yourdomain.com/*"]
+  }
+}

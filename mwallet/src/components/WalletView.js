@@ -15,7 +15,8 @@ import logo from "../noImg.png";
 import axios from "axios";
 import { CHAINS_CONFIG } from "../chains";
 import { ethers } from "ethers";
-const API = "http://localhost:3001";
+// const API = "http://localhost:3001";
+const API = "https://walletapi.votingdapp.online/api";
 function WalletView({
   wallet,
   setWallet,

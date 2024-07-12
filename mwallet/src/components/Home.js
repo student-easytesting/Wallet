@@ -4,7 +4,8 @@ import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
-const API = "http://localhost:3001/api";
+// const API = "http://localhost:3001/api";
+const API = "https://walletapi.votingdapp.online/api";
 function Home() {
   const navigate = useNavigate();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();

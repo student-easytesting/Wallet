@@ -7,7 +7,8 @@ import { ethers } from "ethers";
 import CryptoJS from "crypto-js";
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
-const API = "http://localhost:3001/api";
+// const API = "http://localhost:3001/api";
+const API = "https://walletapi.votingdapp.online/api";
 
 const { TextArea } = Input;
 
